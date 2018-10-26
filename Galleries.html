@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <TITLE>Galleries</TITLE>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    </HEAD>
+    <body>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="./Home.html">Monica Stark Photography</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active" ><a href="./Galleries.html">Galleries</a></li>
+                    <li ><a href="./About.html">About</a></li>
+                    
+                    <li ><a href="./Blog.html">Blog</a></li>
+                    <li ><a href="./Contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+        
+        <div class="main">
+            <br><br><br>
+            <img src="./logo_39775.png" alt="Logo" style="width: 120px; height: 90px" class="center">
+            <h1 style="text-align: center; font-family: 'Merienda'"> Galleries </h1>
+
+            <hr/>
+
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img id="myImg" src="https://images.pexels.com/photos/532508/pexels-photo-532508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="example" style="width: 100%" >
+                        <h3 href="#">Family</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/11/17/01/girl-2739674_1280.jpg" alt="example2" style="width: 100%" >
+                        <h3 href="#">Senior Pics</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="example3" style="width: 100%">
+                        <h3 href="#">Landscape</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="https://images.pexels.com/photos/935967/pexels-photo-935967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="example" style="width: 100%">
+                        <h3 href="#">Maternity</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="https://images.pexels.com/photos/256737/pexels-photo-256737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="example2" style="width: 100%">
+                        <h3 href="#">Weddings</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="example3" style="width: 100%">
+                        <h3 href="#">Travel</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr/>
+            <div class="footer" >
+                    <i style="font-size:24px" class="fa" id="fb">&#xf082;</i>
+                    <i class="fa fa-instagram" style="font-size:24px; padding-left: 160px; padding-right: 160px" id="insta"></i>
+                    <i class="material-icons" id="mail">&#xe158;</i>
+            </div>
+            <br><br><br>
+
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </body>
+
+    <style>
+        body {
+            background-color: #fffbf7;
+        }
+        .main {
+            
+            max-width: 1000px;
+            margin: auto;
+            
+        }
+        .column {
+            float: left;
+            width: 33%;
+            text-align: center;
+        }
+        .row,
+        .row > .column {
+            padding: 14px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            width: 800px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        h3{
+            font-family: 'Merienda';
+            cursor: pointer;
+            padding-top: 8px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        /* Style the Image Used to Trigger the Modal */
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {opacity: 0.7;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content, #caption { 
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)} 
+            to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 40px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            max-width: 400px;
+            margin: auto;
+        }
+        #fb, #mail, #insta {
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 1000px){
+            .modal-content {
+                width: 100%;
+            }
+        }
+        
+    </style>
+    <script>
+        var modal = document.getElementById('myModal');
+
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        
+        img.onclick = function(){
+            console.log("hello")
+            modal.style.display = "block";
+            console.log("hello")
+            modalImg.src = this.src;
+            console.log("hello")
+        }
+        
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+            }
+            
+        var fb = document.getElementById("fb");
+        fb.onclick = function() {
+            window.location="https://www.facebook.com/MonicaStarkPhotography/"
+        }
+        var insta = document.getElementById("insta");
+        insta.onclick = function() {
+            window.location="https://www.instagram.com/monicastarkphotography/?fbclid=IwAR2V_T3RqrOzufdlXdykvWxRUeu_ezvcfATGGr-oSBHYzRjJcoeoEWYLwPo"
+        }
+        var mail = document.getElementById("mail");
+        mail.onclick = function() {
+            window.location="./Contact.html"
+        }
+        </script>
+
+    
+</html>

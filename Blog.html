@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <TITLE>Blog</TITLE>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+        <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    </HEAD>
+    <body>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="./Home.html">Monica Stark Photography</a>
+                      </div>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="./Galleries.html">Galleries</a></li>
+                        <li ><a href="./About.html">About</a></li>
+                        
+                        <li class="active"><a href="./Blog.html">Blog</a></li>
+                        <li ><a href="./Contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+            
+            <div class="main">
+                <br><br><br>
+                <img src="./logo_39775.png" alt="Logo" style="width: 120px; height: 90px" class="center">
+                <h1 style="text-align: center">Blogs</h1>
+                <hr/>
+
+                <br><br>
+
+                <div id="blogspot" style="background-color: #282828; border-color: #43D1B9" data-aos="zoom-in" data-aos-once="true">
+                    <div id="blogpic">
+                        <img src="https://images.pexels.com/photos/935967/pexels-photo-935967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" style="width: 100%; position: relative; top: 50%; transform: translateY(-50%);">
+                    </div>
+                    <h2 style="padding-left: 20px"><a href="#">I could be pregnant!?</a> </h2>
+                    <p style="padding-left: 20px; color: white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ante ut tellus blandit finibus. 
+                        Cras posuere imperdiet orci, vitae suscipit lorem feugiat in. Nulla sit amet sapien fermentum,
+                    </p>
+                </div>
+
+                <br><br>
+
+                <div id="blogspot" style="background-color: white" data-aos="zoom-in" data-aos-once="true">
+                    <div id="blogpic">
+                        <img src="./New Zealand-3733.jpg" style="width: 100%; position: relative; top: 50%; transform: translateY(-50%);">
+                    </div>
+                    <h2 style="padding-left: 20px"><a href="#">Hello from the other slide!</a> </h2>
+                    <p style="padding-left: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ante ut tellus blandit finibus. 
+                        Cras posuere imperdiet orci, vitae suscipit lorem feugiat in. Nulla sit amet sapien fermentum,
+                    </p>
+                </div>
+
+                <br><br>
+
+                <div id="blogspot" style="border-color: #43D1B9" data-aos="zoom-in" data-aos-once="true">
+                    <div id="blogpic">
+                        <img src="./Monica.jpg" style="width: 100%;">
+                    </div>
+                    <h2 style="padding-left: 20px"><a href="#">Introducing me</a> </h2>
+                    <p style="padding-left: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ante ut tellus blandit finibus. 
+                        Cras posuere imperdiet orci, vitae suscipit lorem feugiat in. Nulla sit amet sapien fermentum,
+                    </p>
+                </div>
+
+                <br><br>
+                
+                <hr/>
+                <div class="socialmedia" >
+                        <i style="font-size:24px" class="fa" id="fb">&#xf082;</i>
+                        <i class="fa fa-instagram" style="font-size:24px; padding-left: 160px; padding-right: 160px" id="insta"></i>
+                        <i class="material-icons" id="mail">&#xe158;</i>
+                </div>
+
+                
+                <br><br><br>
+             </div>
+             <div class="footer" style="background-color: #282828; height: 380px">
+                <br><br>
+                <div class="contact">
+                    <h2 style="text-align: center; color: #282828;">Contact me</h2>
+                    <br>
+                    <form action="#" style="text-align: center">
+                        <input type="text" name="fullName" value="Full Name"> <br>
+                        <input type="text" name="email" value="Email address"> <br>
+                        <input type="text" name="desc" value="Description"> <br>
+                        <input type="radio" name="time" value="30 min" checked> 30 min <br>
+                        <input type="radio" name="time" value="1 hour"> 1 hour <br>
+                        <input type="radio" name="time" value="2 hour"> 2 hour <br>
+                        <input type="text" name="date" value="Desired date"> <br>
+                        <input type="button" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+    </body>
+    <style>
+        body {
+            background-color: #fffbf7;
+        }
+        .main {
+            
+            max-width: 1000px;
+            margin: auto;
+            
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        #blogspot {
+            max-width: 950px; 
+            height: 480px; 
+            margin: auto; 
+            overflow: hidden; 
+            border-radius: 5px; 
+            border-style: solid;
+            border-color: #282828;
+            border-width: 2px;
+        }
+        #blogpic {
+            overflow: hidden; 
+            height: 300px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            width: 800px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        .socialmedia {
+            max-width: 400px;
+            margin: auto;
+        }
+        #fb, #mail, #insta {
+            cursor: pointer;
+        }
+        h1, h3, p {
+            font-family: 'Merienda';
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+        }
+        .contact {
+            margin: auto; 
+            max-width: 500px;
+            border-radius: 5px; 
+            border-style: solid;
+            border-color: #43D1B9;
+            border-width: 4px;
+            background-color: #fffbf7;
+            padding-bottom: 10px;
+        }
+        
+    </style>
+    <script>
+        var fb = document.getElementById("fb");
+        fb.onclick = function() {
+            window.location="https://www.facebook.com/MonicaStarkPhotography/"
+        }
+        var insta = document.getElementById("insta");
+        insta.onclick = function() {
+            window.location="https://www.instagram.com/monicastarkphotography/?fbclid=IwAR2V_T3RqrOzufdlXdykvWxRUeu_ezvcfATGGr-oSBHYzRjJcoeoEWYLwPo"
+        }
+        var mail = document.getElementById("mail");
+        mail.onclick = function() {
+            window.location="./Contact.html"
+        }
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+</html>
